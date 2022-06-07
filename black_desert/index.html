@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>검은사막 클론코딩</title>
+    <link rel="stylesheet" href="./css/initial.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <link rel="shortcut icon" href="https://s1.pearlcdn.com/KR/contents/img/common/favicon16_bdo.ico" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="page_wrap">
+        <!-- 헤더영역 -->
+        <header class="header_wrap">
+        </header>
+        <!-- 컨텐츠 배너 영역 -->
+        <article class="content">
+          <section class="visual_wrap">
+            <div class="video_wrap">
+              <video id="videoTag" muted="muted" preload="none" loop="loop" autoplay class="on">
+                <source class="webmSrc" src="./video/content_video.webm" type="video/webm">
+              </video>
+            </div>
+            <div class="floatingBanner">
+              <div class="txt_main_visual">
+                <div class="txt_inner">
+                  <div class="floating_main_wrap">
+                    <h2 class="title_wrap main_title">검은사막, 진정한 모험의 가치</h2>
+                    <p class="main_sub_text">전투부터 생활까지, 그 모든 이야기</p>
+                    <div class="btn_wrap">
+                      <div class="floatingBanner">
+                        <a href="" class="main_btn yellow hover_ripple js-floatingPlayNow">
+                          <span class="hover_ripple_text">지금 시작하기</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="news_wrap section_wrap">
+            <!-- 뉴스 영역 -->
+            <h2 class="blind">최신 소식</h2>
+            <div class="section_inner">
+              <div class="news_list owl-carousel js-newsSlider">
+                <article class="news_item"><a href="#" class="news_box">
+                  <div class="img_area">
+                    <div class="img_wrap">
+                      <img src="./img/news_img01.jpg" alt="폭풍 성장의 지름길, 시즌 : 드라카니아! 완.벽.타.파.">
+                    </div>
+                  </div>
+                  <div class="desc_area">
+                    <p class="news_category"> GM노트 </p>
+                    <h3 class="title">폭풍 성장의 지름길, 시즌 : 드라카니아! 완.벽.타.파.</h3>
+                  </div>
+                </a>
+              </article>
+              <article class="news_item"><a href="#" class="news_box">
+                <div class="img_area">
+                  <div class="img_wrap">
+                    <img src="./img/news_img02.jpg" alt="펄어비스 ID 통합의 모든것!">
+                  </div>
+                </div>
+                <div class="desc_area">
+                  <p class="news_category"> 공지사항 </p>
+                  <h3 class="title">펄어비스 ID 통합의 모든것!</h3>
+                </div>
+              </a>
+            </article>
+            <article class="news_item"><a href="#" class="news_box">
+              <div class="img_area">
+                <div class="img_wrap">
+                  <img src="./img/news_img03.jpg" alt="시즌 : 드라카니아 이벤트 한눈에 확인하기!">
+                </div>
+              </div>
+              <div class="desc_area">
+                <p class="news_category"> GM노트 </p>
+                <h3 class="title">시즌 : 드라카니아 이벤트 한눈에 확인하기!</h3>
+              </div>
+            </a>
+          </article>
+              </div>
+            </div>
+          </section>
+          <!-- 이벤트 메인 섹션 영역 -->
+          <section id="main_band_banner_section">
+            <h2>
+              <a href="#" id="main_band_banner">
+                <span class="only-pc"><img src="./img/main_band_banner.jpg" alt=""></span>
+              </a>
+            </h2>
+          </section>
+            <section class="feature_wrap section_wrap">
+              <div class="section_inner">
+                <div class="feature_subject js-scrollAni on">
+                  <h2 class="section_title bold fadeUp">고대의 진실을 찾아</h2>
+                  <p class="section_desc fadeUp">대륙의 중심에서 기억을 잃은 한 모험가.<br>세계를 관통하는 비밀을 향한 긴 모험이 시작됩니다.</p>
+                </div>
+                <section class="feature_contents adventure">
+                  <div class="feature_thumb js-scrollAni on">
+                    <img class="feature_thumb_img fadeUp" width="680" height="402" loading="lazy" src="./img/main_feature_adventure_thumb.png" alt="">
+                  </div>
+                  <div class="feature_contents_subject js-scrollAni on">
+                    <h3 class="feature_contents_title fadeUp">꿈꾸던 모험을 현실로</h3>
+                    <p class="feature_contents_desc fadeUp">말과 함께 초원을 가로지르는 방랑자, 거대한 범선으로 섬과 육지를 오가는 대상인.<br>드넓은 세계를 유랑하며 나의 이야기를 만들어 가세요.</p>
+                    <a class="feature_contents_more fadeUp" href="#">더보기</a>
+                  </div>
+                </section>
+                <section class="feature_contents battle">
+                  <div class="feature_thumb">
+                    <div class="thumb_img_wrap js-parallaxWrap">
+                      <img src="./img/main_feature_battle_thumb.jpg" alt="" class="feature_thumb_img feature_parallax js-battleParallax main-pc">
+                    </div>
+                      <img src="./img/main_feature_battle_character.png" alt="" class="feature_thumb_img feature_parallax js-battleParallax main-pc">
+                  </div>
+                  <div class="feature_contents_subject js-scrollAni on">
+                    <div class="subject_inner">
+                      <h3 class="feature_contents_title fadeUp">끊이지 않는 전투와 전쟁</h3>
+                      <p class="feature_contents_desc fadeUp">
+                        세계를 위협하는 세력을 저지하고, 때로는 다른 모험가와 승부를 겨루는 짜릿한 전투들.
+                        <br>
+                        포화가 가득한 전쟁을 승리로 이끌어 길드의 명성을 드높이고 막대한 부를 쟁취할 수도 있습니다.
+                      </p>
+                    </div>
+                    <a class="feature_contents_more fadeUp" href="#">더보기</a>
+                  </div>
+                </section>
+                <section class="feature_contents life">
+                  <div class="feature_thumb js-scrollAni on">
+                      <img src="./img/main_feature_life_thumb_1.jpg" alt="" class="feature_thumb_img bg fadeUp">
+                      <img src="./img/main_feature_life_thumb_1_char.png" alt="" class="feature_thumb_img char fadeUp">
+                      <img src="./img/main_feature_life_thumb_1_pet.png" alt="" class="feature_thumb_img pet fadeLeft">
+                  </div>
+                  <div class="feature_contents_subject js-scrollAni on">
+                      <h3 class="feature_contents_title fadeUp">자유로운 생활<br>또 다른 일상</h3>
+                      <p class="feature_contents_desc fadeUp">
+                        내 마음대로 꾸민 공간에서 여가를 즐기세요.
+                        <br>
+                        때로는 모닥불 근처에 둘러앉아 풀벌레 소리를 듣기도 하고,
+                        <br>
+                        친구들과 함께 바다 낚시를 떠나거나 연금술사가 되어보세요.
+                      </p>
+                    <a class="feature_contents_more fadeUp" href="#">더보기</a>
+                  </div>
+                  <span class="thumb_back back1 js-scrollAni on">
+                    <img class="feature_thumb_img fadeUp" src="./img/main_feature_life_thumb_2.jpg" alt="">
+                  </span>
+                  <span class="thumb_back back2 js-scrollAni on">
+                    <img class="feature_thumb_img fadeLeft" src="./img/main_feature_life_thumb_3.jpg" alt="">
+                  </span>
+                </section>
+              </div>
+            </section>
+            <section class="world_wrap js-parallaxWrap">
+              <div class="world_subject js-scrollAni on">
+                <h2 class="section_title fadeUp">광활한 오픈월드</h2>
+                <p class="section_desc fadeUp">숲과 바다, 사막과 설원<br>한적한 시골 마을에서 북적이는 대도시까지<br>발길이 닿는 곳마다 새겨진 가슴 뛰는 이야기</p>
+              </div>
+                <div class="world_parallax_wrap">
+                  <div class="world_parallax js-worldParallax"></div>
+                </div>
+              </div>
+            </section>
+            <section class="character_wrap js-scrollAni on">
+              <!-- 클래스 소개 -->
+              <section class="character_list owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                  <div class="owl-stage">
+                    <div class="owl-item active">
+                      <section id="WARRIOR" class="character_item charcter_1">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">워리어</h3>
+                            <span class="class_desc">검과 방패를 사용하며<br>공격과 방어가 적절한 조화를 이루는 근접형 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_1.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_1.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="RANGER" class="character_item charcter_2">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">레인저</h3>
+                            <span class="class_desc">적과 일정거리를 확보하여<br>상대를 괴롭히며 플레이할 수 있는 원거리형 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_2.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_2.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="SORCERER" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">소서러</h3>
+                            <span class="class_desc">어둠의 마법을 구사하여<br>접근전과 원거리전에서 모두 능통한 하이브리드형 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_3.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_3.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="GIANT" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">자이언트</h3>
+                            <span class="class_desc">거대한 양손도끼로<br>적을 무차별 공격하는 괴물같은 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_4.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_4.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="TAMER" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">금수랑</h3>
+                            <span class="class_desc">흑랑의 주인으로 흑랑과 함께 전투하거나,<br>흑랑을 타고 강한 적들을 상대할 수 있도록 명령하는 소환형 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_5.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_5.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="MUSA" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">무사</h3>
+                            <span class="class_desc">도와 각궁을 사용해<br>다양한 동양의 무예를 구사하는 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_6.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_6.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="MAEHWA" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">매화</h3>
+                            <span class="class_desc">유연한 동양 검술과 궁술을 사용해<br>어떤 동작에서도 물 흐르듯 자연스러운 연계기를 구사하는 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_7.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_7.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="VALKYRIE" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">발키리</h3>
+                            <span class="class_desc">엘리언의 신성 기술을 바탕으로<br>검과 방패를 쥔 채 전장의 선두에서 활약하는 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_8.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_8.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="KUNOICHI" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">쿠노이치</h3>
+                            <span class="class_desc">검술과 체술, 인술을 사용하는 암살자형 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_9.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_9.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="NINZA" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">닌자</h3>
+                            <span class="class_desc">검술과 체술, 인술을 사용하는 암살자형 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_10.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_10.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="WIZARD" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">위자드</h3>
+                            <span class="class_desc">지팡이에 자연 원소의 힘을 끌어모아<br>적을 제압하는 마법형 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_11.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_11.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="WITCH" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">위치</h3>
+                            <span class="class_desc">어린 나이에 마법을 통달하여<br>원거리에서 다양한 자연 원소를 무기 삼는 마법형 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_12.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_12.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="DARK_NIGHT" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">다크나이트</h3>
+                            <span class="class_desc">길고 아름다운 태도를 사용하는 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_13.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_13.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="STRIKER" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">스트라이커</h3>
+                            <span class="class_desc">다양한 길거리 싸움 기술을 접목한<br>맨손 격투 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_14.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_14.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="MYSTIC" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">미스틱</h3>
+                            <span class="class_desc">오랜 단련을 통해<br>권법과 기공술 등 격투 기술을 구사하는 근접형 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_15.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_15.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="LAHN" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">란</h3>
+                            <span class="class_desc">검의 끝자락에 연결된 끈과<br>반월추로 이루어진 무기를 자유자재로 다루는 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_16.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_16.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="ARCHER" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">아처</h3>
+                            <span class="class_desc">민첩한 몸놀림으로 적의 공격을 회피하며<br>궁술을 구사하는 원거리형 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_17.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_17.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="SHAI" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">샤이</h3>
+                            <span class="class_desc">전투와 보조 능력을 적절히 갖춘 보조형 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_18.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_18.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="GUARDIAN" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">가디언</h3>
+                            <span class="class_desc">전투도끼와 방패를 사용하며,<br>묵직한 공격으로 적을 제압하는 근접형 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_19.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_19.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="HASASHIN" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">하사신</h3>
+                            <span class="class_desc">모래의 힘을 자유자재로 다루며<br>변칙적인 공격을 선보이는 중근거리 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_20.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_20.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="NOVA" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">노바</h3>
+                            <span class="class_desc">친위대를 소환하여 방어와 공격을<br>동시에 선보이는 중근거리 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_21.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_21.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="SAGE" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">세이지</h3>
+                            <span class="class_desc">"카이브" 라는 특별한 물질을 다루며,<br>시간과 공간을 비틀어 공격을 퍼붓는 마법형 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_22.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_22.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="CORSAIR" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">커세어</h3>
+                            <span class="class_desc">때때로 신비로운 인어의 모습으로 파도를 다루고,<br>늘어나는 검과 로프를 이용해 예측 불가능한 공격을 선보이는 근거리 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_23.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_23.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="owl-item">
+                      <section id="DRAKANIA" class="character_item charcter_3">
+                        <div class="classes">
+                          <div class="class_desc_wrap">
+                            <h3 class="class_name">드라카니아</h3>
+                            <span class="class_desc">상대의 에너지를 빼앗아 자신의 에너지로 변환시킬 수 있으며,<br>그 에너지를 양손검 슬레이어로 방출하여 강력한 일격을 가하는 근거리 캐릭터</span>
+                            <a href="#" class="btn_more">자세히 알아보기</a>
+                          </div>
+                        </div>
+                        <div class="class_character on">
+                          <picture>
+                            <img src="./img/main_character_class_24.png" alt="">
+                          </picture>
+                        </div>
+                        <div class="class_symbol">
+                          <picture>
+                            <img src="./img/main_character_class_symbol_24.png" alt="">
+                          </picture>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="thumb_nail_area">
+                <a href="#" class="class_play btn btn_mid4 btn_deepyellow hover_ripple">
+                  <span class="hover_ripple_text">지금 시작하기</span>
+                </a>
+                <ul>
+                  <li class="active">
+                    <button data-name="WARRIOR" class="thumb_character_btn character_1 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="RANGER" class="thumb_character_btn character_2 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="SORCERER" class="thumb_character_btn character_3 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="GIANT" class="thumb_character_btn character_4 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="TAMER" class="thumb_character_btn character_5 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="MUSA" class="thumb_character_btn character_6 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="MAEHWA" class="thumb_character_btn character_7 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="VALKYRIE" class="thumb_character_btn character_8 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="KUNOICHI" class="thumb_character_btn character_9 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="NINZA" class="thumb_character_btn character_10 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="WIZARD" class="thumb_character_btn character_11 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="WITCH" class="thumb_character_btn character_12 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="DARK_NIGHT" class="thumb_character_btn character_13 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="STRIKER" class="thumb_character_btn character_14 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="MYSTIC" class="thumb_character_btn character_15 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="LAHN" class="thumb_character_btn character_16 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="ARCHER" class="thumb_character_btn character_17 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="SHAI" class="thumb_character_btn character_18 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="GUARDIAN" class="thumb_character_btn character_19 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="HASASHIN" class="thumb_character_btn character_20 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="NOVA" class="thumb_character_btn character_21 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="SAGE" class="thumb_character_btn character_22 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="CORSAIR" class="thumb_character_btn character_23 js-thumbBtn"></button>
+                  </li>
+                  <li>
+                    <button data-name="DRAKANIA" class="thumb_character_btn character_24 js-thumbBtn"></button>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <div class="multi_wrap">
+              <section class="media_wrap">
+                <div class="media_subject">
+                  <h2 class="section_title bold">미디어</h2>
+                  <p class="section_desc">리마스터링으로 태어난 검은사막의 아름다운 세계를 영상과 이미지를 통해 만나보세요.</p>
+                </div>
+                <div class="media_list_area owl-carousel js-mediaSlider js-scrollAni owl-loaded owl-drag on">
+                  <div class="owl-stage-outer swiper">
+                    <div class="owl-stage swiper-wrapper">
+                      <div class="swiper-slide"><a href=""><img class="media_thumb view_movie js-viewPop"src="./img/s1.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href=""><img class="media_thumb view_movie js-viewPop"src="./img/s2.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href=""><img class="media_thumb view_movie js-viewPop"src="./img/s3.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href=""><img class="media_thumb view_movie js-viewPop"src="./img/s4.jpg" alt=""></a></div>
+                      <div class="swiper-slide"><a href=""><img class="media_thumb view_movie js-viewPop"src="./img/s5.jpg" alt=""></a></div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="download_wrap">
+                <div class="download_subject">
+                  <h2 class="section_title bold">당신의 이야기를 시작하세요.</h2>
+                </div>
+                <div class="download_btn_wrap">
+                  <a href="" id="downloadBtn" class="story_play btn_mid4 btn_deepyellow hover_ripple">
+                    <span class="hover_ripple_text">지금 시작하기</span>
+                  </a>
+                </div>
+              </section>
+            </div>
+        </article>
+        <footer class="footer_wrap">
+          <div class="sns_area">
+            <a href="#" class="btn_sns btn_facebook">FaceBook</a>
+            <a href="#" class="btn_sns btn_youtube">YouTube</a>
+            <a href="#" class="btn_sns btn_twitch">Twitch</a>
+            <a href="#" class="btn_sns btn_phone">Phone</a>
+            <a href="#" class="btn_sns btn_instagram">Instagram</a>
+          </div>
+          <div class="inner_footer">
+            <div class="term_list">
+              <a href="#">펄어비스 서비스 이용약관</a>
+              <a href="#">검은사막 서비스 이용약관</a>
+              <a href="#">개인정보처리방침</a>
+              <a href="#">운영정책</a>
+              <a href="#">청소년 보호 정책</a>
+              <a href="#">이벤트 규약</a>
+              <a href="#">팬 콘텐츠 가이드</a>
+              <a href="#">고객센터</a>
+            </div>
+            <address>
+              <span>㈜펄어비스</span>
+              <span>대표이사: 허진영</span>
+              <span class="mob_block">경기도 안양시 동안구 시민대로327번길 24 (관양동, 펄어비스)</span>
+            </address>
+            <address>
+              <span>사업자등록번호 : 138-81-62479</span>
+              <span>통신판매업 신고번호 : 2017-안양동안-0915</span>
+              <span><a href="#">사업자 정보 확인</a></span>
+            </address>
+            <address>
+              <span>대표번호: 1661-8572</span>
+              <span>FAX : 031-935-0837</span>
+              <span>E-mail : pc_kr@playblackdesert.com</span>
+            </address>
+            <div class="box_game_info">
+              <div class="left_area">
+                <ul>
+                  <li class="sensation"></li>
+                  <li class="violent"></li>
+                  <li class="grade"></li>
+                </ul>
+              </div>
+              <div class="right_area">
+                <ul>
+                  <li>제명</li>
+                  <li>검은사막</li>
+                  <li>상호</li>
+                  <li>㈜펄어비스</li>
+                  <li>이용등급</li>
+                  <li>청소년이용불가</li>
+                  <li>등급분류번호</li>
+                  <li>제CC-NP-140409-005호</li>
+                  <li>등급분류 일자</li>
+                  <li>2014년 4월 9일</li>
+                  <li>제작업 신고번호</li>
+                  <li>제2011-000002호</li>
+                </ul>
+              </div>
+            </div>
+            <div class="copyright">
+              <div class="footer_item">
+                <a href="#" class="btn_country">검은사막 - <span class="current_country">한국</span></a>
+                <a href="#" class="btn_pearlabyss"></a>
+                <p>© Pearl Abyss Corp. All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".owl-stage-outer", {
+        zoom: true,
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 5,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

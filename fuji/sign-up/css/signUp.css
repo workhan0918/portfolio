@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&family=Noto+Serif+KR:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&family=Noto+Serif+KR&display=swap');
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans KR', serif;
+}
+
+ul,ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  margin-bottom: 60px;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.lh-condensed { line-height: 1.25; }
+
+header .navbar .collapse.navbar-collapse .btn {
+  transition: .5s;
+  padding: 3px;
+}
+
+header .navbar .collapse.navbar-collapse .btn:hover {
+  transform: translateY(-2px);
+}
+
+header .navbar .collapse.navbar-collapse .btn a {
+  font-size: 15px;
+  color: gray;
+  padding: 3px;
+  transition: .5s;
+  text-decoration: none;
+}
+
+header .navbar .collapse.navbar-collapse .btn a:hover {
+  color: #ffff;
+  transition: .5s;
+}
+
+.navbar {
+  font-family: 'Noto Sans KR', serif;
+}
+
+.navbar-nav .nav-item .nav-link {
+  transition: .5s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  transform: translateY(-2px);
+  transition: .5s;
+}
+
+.navbar-nav .nav-item .nav-link + .sub-menu {
+  position: absolute;
+  text-align: left;
+  align-items: center;
+  color: rgba(255,255,255,.7);
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 10px;
+  height: 20px;
+  opacity: 0;
+  background: #303a40;
+  visibility: hidden;
+  transition: .5s;
+}
+
+.navbar-nav .nav-item:hover .sub-menu {
+  position: absolute;
+  display: block;
+  opacity: 1;
+  height: 130px;
+  visibility: visible;
+  transition: .5s;
+}
+
+.navbar-nav .nav-item .nav-link + .sub-menu li {
+  padding: 5px;
+  margin-top: 3px;
+}
+
+.navbar-nav .nav-item .nav-link + .sub-menu li a {
+  color: rgba(255,255,255,.7);
+}
+
+.mr-auto {
+  margin-right: 10px !important;
+  margin-left: auto;
+}
+
+.container img {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.mb-3 .btn {
+  outline: none;
+  border: 1px solid #ced4da;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.mb-3 .btn:focus {
+  box-shadow: none;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  border-color: #212529;
+  background-color: #212529;
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #212529;
+  border-color: #212529;
+}
+
+.btn-primary:hover {
+  background-color: #15181a;
+  border-color: #15181a;
+}

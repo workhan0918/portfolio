@@ -1,0 +1,19 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  background: gray;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #111;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

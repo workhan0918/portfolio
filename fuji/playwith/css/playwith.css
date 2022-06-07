@@ -1,0 +1,289 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&family=Noto+Serif+KR:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&family=Noto+Serif+KR&display=swap');
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans KR', serif;
+}
+
+ul,ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+.mr-auto {
+  margin-left: auto;
+  margin-right: 10px !important;
+}
+
+header .navbar .collapse.navbar-collapse .btn {
+  transition: .5s;
+  padding: 3px;
+}
+
+header .navbar .collapse.navbar-collapse .btn:hover {
+  transform: translateY(-2px);
+}
+
+header .navbar .collapse.navbar-collapse .btn a {
+  font-size: 15px;
+  color: gray;
+  padding: 3px;
+  transition: .5s;
+  text-decoration: none;
+}
+
+header .navbar .collapse.navbar-collapse .btn a:hover {
+  color: #ffff;
+  transition: .5s;
+}
+
+.navbar {
+  font-family: 'Noto Sans KR', serif;
+}
+
+.navbar-nav .nav-item .nav-link {
+  transition: .5s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  transform: translateY(-2px);
+  transition: .5s;
+}
+
+.navbar-nav .nav-item .nav-link + .sub-menu {
+  position: absolute;
+  text-align: left;
+  align-items: center;
+  color: rgba(255,255,255,.7);
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 10px;
+  height: 20px;
+  opacity: 0;
+  background: #303a40;
+  visibility: hidden;
+  transition: .5s;
+}
+
+.navbar-nav .nav-item:hover .sub-menu {
+  position: absolute;
+  display: block;
+  opacity: 1;
+  height: 130px;
+  visibility: visible;
+  transition: .5s;
+}
+
+.navbar-nav .nav-item .nav-link + .sub-menu li {
+  padding: 5px;
+  margin-top: 3px;
+}
+
+.navbar-nav .nav-item .nav-link + .sub-menu li a {
+  color: rgba(255,255,255,.7);
+}
+
+.container h1 {
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.container .col-lg-3 .img-box {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background: #bfbdbd;
+  top: -10px;
+  left: calc(50% - 80px);
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+}
+
+.container .col-lg-3 .img-box img {
+  width: 100%;
+}
+
+.card-title {
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+.container .col-lg-3 .btn {
+  padding-left: 0;
+}
+
+.container .featurette-heading {
+  margin-bottom: 17px;
+}
+
+.container .text-muted {
+  line-height: 32px;
+  font-size: 32px;
+}
+
+.container .row.featurette:nth-of-type(1) .col-md-5 .bd-placeholder-img {
+  background: url('../img/section-img1.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container .row.featurette:nth-of-type(2) .col-md-5 .bd-placeholder-img {
+  background: url('../img/section-img2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container .row.featurette:nth-of-type(3) .col-md-5 .bd-placeholder-img {
+  background: url('../img/section-img3.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+main .jumbotron .container h1 {
+  margin-top: 80px;
+}
+.row {
+  flex-wrap: nowrap;
+}
+
+main .btn:hover {
+  background: #f1f1f1;
+  color: #111;
+}
+
+main .btn a {
+  font-size: 15px;
+  color: gray;
+  padding: 3px;
+  transition: .5s;
+  text-decoration: none;
+}
+
+main .btn a:hover {
+  color: #ffff;
+  transition: .5s;
+}
+
+.featurette-divider {
+  margin-top: 0;
+  margin-bottom: 140px;
+}
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  background: #fff;
+}
+
+main .jumbotron .container  p, .jumbotron .container h1 {
+  color: #111;
+}
+
+main .jumbotron .container p {
+  margin-bottom: 0;
+  margin-top: 60px;
+}
+
+main .jumbotron .container h1 {
+  font-size: 56px;
+  font-weight: 500;
+}
+
+main .title-text {
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.container .text-muted {
+  font-size: 16px;
+}
+
+.lead {
+  margin-top: 30px;
+}
+
+.pagination {
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.pagination .page-item .page-link {
+  color: #111;
+}
+
+.pagination .page-item .page-link.active {
+  background: #f1f1f1;
+}
+
+.pagination .page-item .page-link:focus {
+  box-shadow: none;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+
+}

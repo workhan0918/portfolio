@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.container .row.featurette:nth-of-type(1) .col-md-5 .bd-placeholder-img {
+  background: url('../img/section-img1.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container .row.featurette:nth-of-type(2) .col-md-5 .bd-placeholder-img {
+  background: url('../img/section-img2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container .row.featurette:nth-of-type(3) .col-md-5 .bd-placeholder-img {
+  background: url('../img/section-img3.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
